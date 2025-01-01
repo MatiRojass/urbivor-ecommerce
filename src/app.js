@@ -1,10 +1,6 @@
 import express, { urlencoded } from 'express'
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
-
-//constants
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const PORT = 3000
+import { resolve } from 'path'
+import { PORT, __dirname } from './constants.js'
 
 //Main Router
 import mainRouter from './routes/main.routes.js'
