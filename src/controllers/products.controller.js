@@ -1,8 +1,5 @@
-import { __dirname } from '../constants.js'
-import { resolve } from 'path'
-
 const products = (req, res) => {
-	res.sendFile(resolve(__dirname, './views/products.html'))
+	res.render('products.ejs')
 }
 
 const productDetail = (req, res) => {
